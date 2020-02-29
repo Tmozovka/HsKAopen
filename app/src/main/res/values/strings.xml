@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HsKAopen</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="err_msg_login">Enter the login</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="warning_requirements"><u>If you have problems with HsKAopen-connection click hier: <b>App requirements</b></u> </string>
+    <string name="connect_to_hska_wlan">Now you can connect to Wi-fi HsKAwlan using HsKAopen! Please register there with username: \nUsername@&lt;faculty&gt;-wlan.hs-karlsruhe.de\nand yor password \n\nUsername examples:\nabcd1234@iwi-wlan.hs-karlsruhe.de\nabcd1234@eit-wlan.hs-karlsruhe.de\n\n Possible faculty shorthands:\n iwi, ab, eit, imm, mmt, w</string>
+</resources>
