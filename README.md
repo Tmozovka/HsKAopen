@@ -32,13 +32,13 @@ An der Server von Hochschule darf ein Benutzer nur 3 Geräte registrieren. Falls
 
 Die HsKAopen Application beinhaltet drei Activities(Bildschirme, mit der Benutzer interagiert):
 
-* **MainActivity**
+#### MainActivity
 
 Activity, bei der folgendes registriert wird:
 * "OnClickListener" für TextView und Warnungsbild, der bei anklicken Benutzer zur "App requirements"-Activity überleitet. 
 * Felder für Benutzername- und Passworteingaben. 
 * "SetOnClickListener" für "Connect"-Button. Unter der Listner ist viel Hintergrundprozesse versteckt:
-..* lala
+    * lala
 
 
 ## Autoren
