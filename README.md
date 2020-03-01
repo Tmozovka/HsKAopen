@@ -38,8 +38,20 @@ Activity, bei der folgendes registriert wird:
 * "OnClickListener" für TextView und Warnungsbild, der bei anklicken Benutzer zur "App requirements"-Activity überleitet. 
 * Felder für Benutzername- und Passworteingaben. 
 * "SetOnClickListener" für "Connect"-Button. Unter der Listner ist viel Hintergrundprozesse versteckt:
-    * lala
+    1. Überprüfung, ob Benutzername und Passwort richtig angegeben wird 
+    (Die Felder müssen nicht leer seind. Benutzername muss vier Buchsatben und vier Zahlen beinhalten. Z.b abcd1234).
+    2. RestApiConnector regestrieren.
+    3. An der RestApiConnector Anfrage für die HsKAOpen Verbindung abschicken. 
 
+    Zuerst werden die gespecherte auf dem Server von Benutzer MAC-Adressen abgefragt und in einem TextView in Hintergrund geschrieben.
+    Wenn den Text in der TextView verändert wird, wird es überprüft, ob der MAC-Adresse im Text beinhaltet ist( nämlich ob die MAC-Adresse vom Handy schon auf dem Server gespeichert ist). 
+
+    Falls nein, wird zu den Text in der TextView die MAC-Adresse vom Handy hinzugefügt. Danach wird es überprüft, ob die in der Vergangenheit abgeschickte MAC-Adressen (sie sind in Handy unter "SharedPreferences" gespeichert) in Text gespeichert sind. Falls ja, werden sie aus dem Handyspeciher und Text gelöscht. Es kann passieren, wenn der Benutzer "MAC-Randomization" nicht abgeschaltet hat.
+    Im den Fall wird bei jeder HsKAopen verbindung neue MAC-Adresse generiert und folglich muss die Verbindung mit HsKAopen neu eingerichtet werden. 
+
+    Falls die MAC-Adresse erfolgreich an Server abgeschickt wird, wird in MainActivity der Wert "readyToConnect" auf "True". 
+    In MainActivity wird noch ein OnChangeListner für den TextView in Hintergrund gesetzt. Wenn Text in TextView verändert würde und "readyToConnect == True", wird der Benutzer zur Activity "ConnectToHskaWlan" überleitet. 
+    Die Überleitung bedeutet, dass die MAC-Adresse auf dem Server erfolgreich abgespeichert ist und Benutzer muss noch nur die Verbindung mit Hska-8021x anpassen. 
 
 ## Autoren
 
