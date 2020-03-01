@@ -12,6 +12,8 @@ Sie können die App [in der Emulator ausführen](https://developer.android.com/s
 
 Die HsKAopen Application ermöglicht es die MAC-Adresse von Handy an der Server von Hochschule zu senden, um die WLAN-Verbindung mit Internetdienste außerhalb von Hochschulnetz ohne Proxy einzurichten. 
 
+Benutzer muss eigene IZ-Benutzername und IZ-Passwort eingeben, um die MAC-Adresse zu senden. 
+
 ![Connect to HsKAopen](images_for_readme/gif_use_app.gif)
 
 In der Applikation werden auch die konkrete Schritte für die HsKAopen unter dem Abschnitt "App requirements" beschrieben, um für Benutzer klar zu machen, was die Applikation macht. 
@@ -24,9 +26,24 @@ An der Server von Hochschule darf ein Benutzer nur 3 Geräte registrieren. Falls
 
 ![Registrationsmeldung](images_for_readme/allow_just_3_devices.gif)
 
+## System
+
+### Activities 
+
+Die HsKAopen Application beinhaltet drei Activities(Bildschirme, mit der Benutzer interagiert):
+
+* **MainActivity**
+
+Activity, bei der folgendes registriert wird:
+* "OnClickListener" für TextView und Warnungsbild, der bei anklicken Benutzer zur "App requirements"-Activity überleitet. 
+* Felder für Benutzername- und Passworteingaben. 
+* "SetOnClickListener" für "Connect"-Button. Unter der Listner ist viel Hintergrundprozesse versteckt:
+..* lala
+
+
 ## Autoren
 
-* ** Tatsiana Mazouka ** - [tmozovka] (https://github.com/tmozovka)
+* **Tatsiana Mazouka** - [tmozovka] (https://github.com/tmozovka)
 
 ## Lizenz
 
