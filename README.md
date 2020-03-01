@@ -61,7 +61,7 @@ Die Activity wird aufgerufen, falls die MAC-Adresse erfolgreich an Server abgesc
 Am nächsten muss Benutzer die Benutzername in der Hska-8021x anpassen und die HsKAopen wird funktionieren.
 Die ausführliche Einleitung wird in der Activity angegeben. 
 
-### WarningRequirements
+#### WarningRequirements
 
 In der Activity werden die Schritte für HsKAopen-Verbindung geklärt und wird beschribenen, wie der Benutzer fehlerhafte Verbindung reparieren kann. 
 
