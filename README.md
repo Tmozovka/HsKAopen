@@ -1,4 +1,4 @@
-# Projekttitel
+# HsKAopen
 
 HsKAopen ist eine Android-Application, die für die Hochschule Karlsruhe Technik und Wirtschaft für eine einfache WLAN-Verbindung entwickelt wurde.
 
