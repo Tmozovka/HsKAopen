@@ -12,7 +12,7 @@ Sie können die App [in der Emulator ausführen](https://developer.android.com/s
 
 Die HsKAopen Application ermöglicht es die MAC-Adresse von Handy an der Server von Hochschule zu senden, um die WLAN-Verbindung mit Internetdienste außerhalb von Hochschulnetz ohne Proxy einzurichten. 
 
-![Connect to HsKAopen|512x397, 20%](images_for_readme/gif_use_app.gif)
+![Connect to HsKAopen|80%](images_for_readme/gif_use_app.gif)
 
 
 
