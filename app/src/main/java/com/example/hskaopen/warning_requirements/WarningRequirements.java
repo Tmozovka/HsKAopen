@@ -50,7 +50,7 @@ public class WarningRequirements extends AppCompatActivity {
             group.children.add(
                             "\nWhat is it MAC address?\n\n" +
                             "A media access control address (MAC address) is a unique identifier of your device assigned to a network interface controller (NIC). The NIC is essentially a computer circuit card that makes it possible for your phone to connect to a network.\n" +
-                            "The MAC address can be used to track a device on Wi-Fi networks. If someone discovers the MAC address associated with your mobile device, he or she can easily spy on you. Say, you move around from wireless network to wireless network. Each time your MAC address is saved in the network, it can be tracked, thereby giving away your movement throughout a city. That is not just a privacy issue but a data security problem.\n\n"
+                            "The MAC address can be used to track a device on Wi-Fi networks. If someone discovers the MAC address associated with your mobile device, he or she can easily spy on you. Say, you move around from the wireless network to wireless network. Each time your MAC address is saved in the network, it can be tracked, thereby giving away your movement throughout a city. That is not just a privacy issue but a data security problem.\n\n"
                             );
             group.children.add(
                     "\nWhat is it MAC randomization?\n\n" +
@@ -59,8 +59,8 @@ public class WarningRequirements extends AppCompatActivity {
                             "In Android 10, MAC randomization is enabled by default for client mode.\n\n" );
             group.children.add(
                             "\nWhy HSKA-Open doesn’t work without MAC randomization?\n\n" +
-                            "When you connect to HsKA-8021x, you are allowed just to use online services of the Karlsruhe University of Applied Sciences. Your identity must be confirmed to allow you to use other resources of Word Wide Web (for example Google Search, WhatsApp etc.). MAC address of your device must be saved on the University Server for this propose. \n" +
-                            "When your MAC address is saved on server and you are correctly logged in to HsKA-8021x, you are consequently connected to HSKA-Open and can visit all Websites. But if MAC randomization is enabled on your device, your identity can not be confirmed. (Your MAC address is changed every time, when you connect to HsKA-8021x and MAC Randomisation is enabled.) \n"
+                            "When you connect to HsKA-8021x, you are allowed just to use online services of the Karlsruhe University of Applied Sciences. Your identity must be confirmed to allow you to use other resources of Word Wide Web (for example Google Search, WhatsApp, etc.). MAC address of your device must be saved on the University Server for this propose. \n" +
+                            "When your MAC address is saved on the server and you are correctly logged in to HsKA-8021x, you are consequently connected to HSKA-Open and can visit all Websites. But if MAC randomization is enabled on your device, your identity can not be confirmed. (Your MAC address is changed every time, when you connect to HsKA-8021x and MAC Randomisation is enabled.) \n"
             );
             groups.append(i++, group);
 
@@ -79,13 +79,13 @@ public class WarningRequirements extends AppCompatActivity {
                 "Possible faculty shorthands:\n iwi, ab, eit, imm, mmt, w\n\n"  );
         groups.append(i++, group);
 
-        group = new Group("Fix error issues with HsKA-8021x-Connection ");
-        group.children.add("\nIf you can not connect to HsKA-8021x Wi-fi, it could be because of security certificate missing.\n "  +
+        group = new Group("Fix error issues with HsKA-8021x connection ");
+        group.children.add("\nIf you can not connect to HsKA-8021x Wi-Fi, it could be because of security certificate missing.\n "  +
                 "For this you absolutely need the \"T-Telesec Global Root Class 2\" certificate: \n" +
                 "1) Download the security certificate via:\n" +
                 "https://www.pki.dfn.de/fileadmin/PKI/zertifikate/DFN-Verein_Certification_Authority_2.crt\n"  +
                 "2) Open downloaded file \n" +
-                "3) In the window for the certificate setup, select \"Wi-fi\"(WLAN) under \"Credential use\"(Verwendung der Anmeldedaten)\n" +
+                "3) In the window for the certificate setup, select \"Wi-Fi\"(WLAN) under \"Credential use\"(Verwendung der Anmeldedaten)\n" +
                 "4)At the HsKA-8021x Settings for connection give following information:\n" +
                 "   EAP method: PEAP\n" +
                 "   Phase-2 authentication: MS-CHAP v2\n" +
