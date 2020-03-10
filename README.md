@@ -70,6 +70,10 @@ sonder auch wieso man dies machen muss und was MAC-Randomisation ist.
 
 Unter dem Abschnitt "Fix error issues with HsKA-8021x Connection" ist ausführlich beschrieben, wie man sich mit HsKA-8021x WLAN richtig verbinden kann. Es beinhaltet auch die Installation des Sicherheitszertifikats.
 
+## Anmerkungen
+
+Für das korrekte Funktionieren der HsKA-8021x muss ein Zertifikat installiert werden. Eine Installationslink ist in der Klasse "WarningRequirements" angegeben. Wenn das Zertifikat verändert wird, muss der Link auch angepasst werden.  
+
 ## Ausblick und Ideen
 
 Die Applikation ist betriebsbereit und muss nur für die breite Masse veröffentlicht werden. 

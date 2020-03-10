@@ -83,7 +83,7 @@ public class WarningRequirements extends AppCompatActivity {
         group.children.add("\nIf you can not connect to HsKA-8021x Wi-Fi, it could be because of security certificate missing.\n "  +
                 "For this you absolutely need the \"T-Telesec Global Root Class 2\" certificate: \n" +
                 "1) Download the security certificate via:\n" +
-                "https://www.pki.dfn.de/fileadmin/PKI/zertifikate/DFN-Verein_Certification_Authority_2.crt\n"  +
+                "https://www.pki.dfn.de/fileadmin/PKI/zertifikate/T-TeleSec_GlobalRoot_Class_2.crt\n" +
                 "2) Open downloaded file \n" +
                 "3) In the window for the certificate setup, select \"Wi-Fi\"(WLAN) under \"Credential use\"(Verwendung der Anmeldedaten)\n" +
                 "4)At the HsKA-8021x Settings for connection give following information:\n" +

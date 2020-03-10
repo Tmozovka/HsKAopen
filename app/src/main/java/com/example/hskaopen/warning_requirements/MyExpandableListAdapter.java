@@ -51,7 +51,7 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
         text = (TextView) convertView.findViewById(R.id.textView1);
         text.setText(children);
         // Add link to security certificate
-        Pattern pattern = Pattern.compile("https:\\/\\/www.pki.dfn.de\\/fileadmin\\/PKI\\/zertifikate\\/DFN-Verein_Certification_Authority_2.crt");
+        Pattern pattern = Pattern.compile("https:\\/\\/www.pki.dfn.de\\/fileadmin\\/PKI\\/zertifikate\\/*");
         Linkify.addLinks( text, pattern, "");
         return convertView;
     }
